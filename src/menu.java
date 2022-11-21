@@ -23,7 +23,7 @@ public class menu {
             } else if (op == 2) {
                 fn.sm3nos();
             } else if (op == 3) {
-
+                fn.evnNt();
             } else if (op == 4) {
 
             } else if (op == 4) {
