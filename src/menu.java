@@ -23,12 +23,12 @@ public class menu {
             } else if (op == 2) {
                 fn.sm3nos();
             } else if (op == 3) {
-
+                fn.prime();
             } else if (op == 4) {
-
-            } else if (op == 4) {
-
-            }else if (op == 5) {
+                fn.evnNt();
+            } else if (op == 5) {
+                fn.reverse();
+            }else if (op == 6) {
                     System.out.println("ok bei");
                     System.exit(0);
             } else {

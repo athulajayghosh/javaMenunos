@@ -69,5 +69,32 @@ public class funs {
             if(flag==0)  { System.out.println(n+" is prime number"); }
         }
     }
+    public void reverse(){
+        Scanner sn = new Scanner(System.in);
+        System.out.println("Enter no:");
+        int number= sn.nextInt();
+        int reverse = 0;
+        while(number != 0)
+        {
+            int remainder = number % 10;
+            reverse = reverse * 10 + remainder;
+            number = number/10;
+        }
+        System.out.println("The reverse of the given number is: " + reverse);
+}
+    public void evnNt(){
+        int n;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number you want to check:");
+        n = s.nextInt();
+        if(n % 2 == 0)
+        {
+            System.out.println("The given number "+n+" is Even ");
+        }
+        else
+        {
+            System.out.println("The given number "+n+" is Odd ");
+        }
+    }
 
 }
