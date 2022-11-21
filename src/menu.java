@@ -1,32 +1,6 @@
 import java.util.Scanner;
 
 public class menu {
-    int a, b, c, op;
-    public void lrg3nos(){
-        Scanner sn = new Scanner(System.in);
-        System.out.println("Enter First no:");
-        a= sn.nextInt();
-        System.out.println("Enter First no:");
-        b= sn.nextInt();
-        System.out.println("Enter First no:");
-        c= sn.nextInt();
-
-        if(a>b){
-            if(a>c){
-                System.out.println(a+"is the largest");
-            }
-            else{System.out.println(c+"is the largest");}
-        }
-        else{
-            if(b>c){
-                System.out.println(b+"is the largest");
-            }
-            else {
-                System.out.println(c+"is the largest");
-            }
-        }
-    }
-
     public static void main(String[] args) {
 
         int op;
@@ -43,11 +17,11 @@ public class menu {
 
             System.out.println("Enter your Option:");
             op = sn.nextInt();
-            menu mn=new menu();
-
+            funs fn = new funs();
             if (op == 1) {
+                fn.lrg3nos();
             } else if (op == 2) {
-                mn.lrg3nos();
+                fn.sm3nos();
             } else if (op == 3) {
 
             } else if (op == 4) {
